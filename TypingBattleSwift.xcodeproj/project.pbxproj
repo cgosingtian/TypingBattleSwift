@@ -13,6 +13,7 @@
 		4F8173781A0362FB0011D759 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F8173771A0362FB0011D759 /* Images.xcassets */; };
 		4F81737B1A0362FB0011D759 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8173791A0362FB0011D759 /* LaunchScreen.xib */; };
 		4F8173871A0362FB0011D759 /* TypingBattleSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8173861A0362FB0011D759 /* TypingBattleSwiftTests.swift */; };
+		4F81739F1A03714E0011D759 /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F81739E1A03714E0011D759 /* WordList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		4F8173801A0362FB0011D759 /* TypingBattleSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TypingBattleSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F8173851A0362FB0011D759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F8173861A0362FB0011D759 /* TypingBattleSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingBattleSwiftTests.swift; sourceTree = "<group>"; };
+		4F81739E1A03714E0011D759 /* WordList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +81,10 @@
 			children = (
 				4F8173701A0362FA0011D759 /* AppDelegate.swift */,
 				4F8173721A0362FB0011D759 /* ViewController.swift */,
-				4F8173741A0362FB0011D759 /* Main.storyboard */,
 				4F8173771A0362FB0011D759 /* Images.xcassets */,
 				4F8173791A0362FB0011D759 /* LaunchScreen.xib */,
+				4F8173741A0362FB0011D759 /* Main.storyboard */,
+				4F81739B1A0371100011D759 /* Modules */,
 				4F81736E1A0362FA0011D759 /* Supporting Files */,
 			);
 			path = TypingBattleSwift;
@@ -110,6 +113,30 @@
 				4F8173851A0362FB0011D759 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F81739B1A0371100011D759 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4F81739C1A0371210011D759 /* WordList */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		4F81739C1A0371210011D759 /* WordList */ = {
+			isa = PBXGroup;
+			children = (
+				4F81739D1A0371360011D759 /* Models */,
+			);
+			name = WordList;
+			sourceTree = "<group>";
+		};
+		4F81739D1A0371360011D759 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4F81739E1A03714E0011D759 /* WordList.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F81739F1A03714E0011D759 /* WordList.swift in Sources */,
 				4F8173731A0362FB0011D759 /* ViewController.swift in Sources */,
 				4F8173711A0362FA0011D759 /* AppDelegate.swift in Sources */,
 			);
@@ -407,6 +435,7 @@
 				4F81738C1A0362FB0011D759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F81738D1A0362FB0011D759 /* Build configuration list for PBXNativeTarget "TypingBattleSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +444,7 @@
 				4F81738F1A0362FB0011D759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
